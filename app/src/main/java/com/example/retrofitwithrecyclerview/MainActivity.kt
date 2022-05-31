@@ -3,8 +3,12 @@ package com.example.retrofitwithrecyclerview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -13,15 +17,26 @@ const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var myAdapter: MyAdapter
+    lateinit var linearLayout: LinearLayoutManager
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+
+        recyclerView.setHasFixedSize(true)
+        linearLayout = LinearLayoutManager(this)
+        recyclerView.layoutManager = linearLayout
         getMyData()
     }
 
     private fun getMyData() {
+        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+
         val retrofitBuilder = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(BASE_URL)
@@ -37,19 +52,15 @@ class MainActivity : AppCompatActivity() {
             ) {
                 val responseBody = response.body()
 
-                val myStringBuilder = StringBuilder()
-                if (responseBody != null) {
-                    for (myData in responseBody) {
-                        myStringBuilder.append(myData.id)
-                        myStringBuilder.append("\n")
-                    }
+                if (responseBody != null){
+                    myAdapter = MyAdapter(baseContext, responseBody)
+                    myAdapter.notifyDataSetChanged()
+                    recyclerView.adapter = myAdapter
+
                 }
                 else{
-                    Toast.makeText(applicationContext,"Null Exception", Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext, "Null Error", Toast.LENGTH_LONG).show()
                 }
-
-                val txtId : TextView = findViewById(R.id.txtId)
-                txtId.text = myStringBuilder
             }
 
             override fun onFailure(call: Call<List<MyDataItem>?>, t: Throwable) {
