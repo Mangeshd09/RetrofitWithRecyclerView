@@ -3,12 +3,10 @@ package com.example.retrofitwithrecyclerview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.retrofitwithrecyclerview.databinding.ActivityMainBinding
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -17,25 +15,26 @@ const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var myAdapter: MyAdapter
-    lateinit var linearLayout: LinearLayoutManager
+    private lateinit var viewAdapter : MyAdapter
+    private lateinit var list: ArrayList<MyDataItem>
 
-
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
-        recyclerView.setHasFixedSize(true)
-        linearLayout = LinearLayoutManager(this)
-        recyclerView.layoutManager = linearLayout
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        list = ArrayList()
+        viewAdapter = MyAdapter( list )
+        binding.recyclerView.adapter = viewAdapter
+
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
         getMyData()
     }
 
     private fun getMyData() {
-        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         val retrofitBuilder = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
@@ -45,17 +44,17 @@ class MainActivity : AppCompatActivity() {
 
         val retrofitData = retrofitBuilder.getData()
 
-        retrofitData.enqueue(object : Callback<List<MyDataItem>?> {
+        retrofitData.enqueue(object : Callback<ArrayList<MyDataItem>?> {
             override fun onResponse(
-                call: Call<List<MyDataItem>?>,
-                response: Response<List<MyDataItem>?>
+                call: Call<ArrayList<MyDataItem>?>,
+                response: Response<ArrayList<MyDataItem>?>
             ) {
-                val responseBody = response.body()
 
-                if (responseBody != null){
-                    myAdapter = MyAdapter(baseContext, responseBody)
-                    myAdapter.notifyDataSetChanged()
-                    recyclerView.adapter = myAdapter
+                if (response.body() != null){
+                    val responseBody = response.body()!!
+
+                    list.addAll(responseBody)
+                    viewAdapter.notifyItemRangeInserted(10, list.size)
 
                 }
                 else{
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            override fun onFailure(call: Call<List<MyDataItem>?>, t: Throwable) {
+            override fun onFailure(call: Call<ArrayList<MyDataItem>?>, t: Throwable) {
                 Log.d("MainActivity", "onFailure: "+ t.message)
             }
         })

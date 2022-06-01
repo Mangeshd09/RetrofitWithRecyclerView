@@ -1,33 +1,16 @@
 <resources>
     <string name="app_name">Kintree</string>
-    <!--Keys-->
-    <string name="places_api_key" translatable="false">AIzaSyA9lCk51MKv1gOGueGwCNevvXRIzR1D6IU</string>
-    <string name="apps_flyer_dev_key" translatable="false">AvYFnDbYnmP99HcqFLSiCm</string>
-    <string name="facebook_app_id" translatable="false">954246415242244</string>
-    <string name="facebook_client_token" translatable="false">fc7baced13e288679daf2831b90b9dc6</string>
 
     <!--Language Selection Activity-->
     <string name="language_header">Languages</string>
     <string name="language_sub_header">Select your preferred language</string>
-    <string name="language_english_header" translatable="false">English (Default)</string>
-    <string name="language_hindi_header" translatable="false">हिंदी</string>
-    <string name="language_marathi_header" translatable="false">मराठी</string>
-    <string name="language_gujarati_header" translatable="false">ગુજરાતી</string>
-    <string name="language_punjabi_header" translatable="false">ਪੰਜਾਬੀ</string>
-    <string name="language_bengali_header" translatable="false">বাংলা</string>
-    <string name="language_telugu_header" translatable="false">తెలుగు</string>
-    <string name="language_kannada_header" translatable="false">ಕನ್ನಡ</string>
-    <string name="language_tamil_header" translatable="false">தமிழ்</string>
-    <string name="language_malayalam_header" translatable="false">മലയാളം</string>
-    <string name="language_urdu_header" translatable="false">اردو</string>
-    <string name="language_assamese_header" translatable="false">অসমীয়া</string>
     <string name="language_marathi_button_continue">Continue</string>
 
     <string name="general_permission_denied">Permission Denied</string>
     <string name="general_otp_sent">OTP sent successfully</string>
     <string name="general_male">Male</string>
     <string name="general_female">Female</string>
-    <string name="general_gender_empty_error">Select gender</string>
+    <string name="general_gender_empty_error">ലിംഗഭേദം തിരഞ്ഞെടുക്കുക .</string>
     <string name="general_save_button">Save</string>
     <string name="general_save_underline_button">Save</string>
     <string name="general_done_button">Done</string>
@@ -43,15 +26,15 @@
 
     <!--Login-->
     <string name="login_header">Login</string>
-    <string name="login_username_input">Username</string>
+    <string name="login_username_input">യൂസർനെയിം</string>
     <string name="login_username_empty_error">Hey, looks like you forgot to enter your username.</string>
-    <string name="login_password_input">Password</string>
+    <string name="login_password_input">പാസ് വേഡ്</string>
     <string name="login_password_empty_error">Hey, looks like you forgot to enter your password.</string>
     <string name="login_password_username_error_invalid">Invalid login details</string>
     <string name="login_redirect_to_text">Don\'t have an account?</string>
     <string name="login_redirect_to_signup">SIGN UP</string>
-    <string name="login_forgot_password">password</string>
-    <string name="login_forgot_username">username</string>
+    <string name="login_forgot_password">പാസ് വേഡ്</string>
+    <string name="login_forgot_username">യൂസർനെയിം</string>
     <string name="profile">Profile photo</string>
     <string name="login_forgot_full_text">Forgot %1$s or %2$s?</string>
     <string name="dialog_force_logout_header">You have already logged in from another device.</string>
@@ -62,10 +45,10 @@
 
     <!--Signup-->
     <string name="signup_header">Sign up</string>
-    <string name="signup_first_name_input">First Name</string>
-    <string name="signup_last_name_input">Last Name</string>
+    <string name="signup_first_name_input">ആദ്യ നാമം</string>
+    <string name="signup_last_name_input">അവസാന നാമം</string>
     <string name="signup_contact_input">Email / Mobile</string>
-    <string name="signup_gender_input">Gender</string>
+    <string name="signup_gender_input">ലിംഗഭേദം </string>
     <string name="signup_date_of_birth_header">Date of Birth</string>
     <string name="signup_day_header">Day</string>
     <string name="signup_month_header">Month</string>
@@ -151,7 +134,7 @@
     <!--Create Username process-->
     <string name="create_user_header">Create username \nand password</string>
     <string name="create_user_sub_header">You can always change it later.</string>
-    <string name="create_user_username_input">Username</string>
+    <string name="create_user_username_input">യൂസർനെയിം</string>
     <string name="create_user_user_empty_error">Hey! You forgot to enter username.</string>
     <string name="create_user_user_match">Uh-oh! This username is taken already. Try using one of the available names.</string>
     <string name="create_user_password_input">Enter password</string>
@@ -223,11 +206,11 @@
     <string name="success_redirect_profile_button">Go to Profile</string>
 
     <!--Home Activity-->
-    <string name="nav_foreroom">Foreroom</string>
-    <string name="nav_family_tree">Family Tree</string>
-    <string name="nav_post">Post</string>
-    <string name="nav_notifications">Notification</string>
-    <string name="nav_profile">Profile</string>
+    <string name="nav_foreroom">മുൻഭാഗം</string>
+    <string name="nav_family_tree">കുടുംബം മരം</string>
+    <string name="nav_post">പോസ്റ്റ്</string>
+    <string name="nav_notifications">അറിയിപ്പ്</string>
+    <string name="nav_profile">പ്രൊഫൈൽ</string>
 
     <!--Hamburger Options Sheet-->
     <string name="options_1">View Profile</string>
@@ -253,8 +236,8 @@
 
     <!--Basic Info Activity-->
     <string name="basic_header">Basic Information</string>
-    <string name="basic_middle_name">Middle Name</string>
-    <string name="basic_father_name">Father\'s Name</string>
+    <string name="basic_middle_name">മധ്യനാമം</string>
+    <string name="basic_father_name">അച്ഛന്റെ പേര്</string>
     <string name="basic_nick_name">Nick Name</string>
     <string name="basic_bio">Bio</string>
     <string name="basic_mandate_field">This is a mandatory field.</string>
@@ -263,7 +246,7 @@
     <string name="add_header">Additional Information</string>
     <string name="add_location_input">Search location</string>
     <string name="add_input_birth">Birth Place</string>
-    <string name="add_input_native">Native Place</string>
+    <string name="add_input_native">സ്വദേശ സ്ഥലം</string>
     <string name="add_input_current_city">Current City</string>
     <string name="add_input_blood">Blood Group</string>
     <string name="add_input_occupation">Occupation</string>
@@ -272,9 +255,9 @@
     <string name="add_input_anniversary_error">Anniversary date cannot be less than date of birth</string>
 
     <!--Contact Information Activity-->
-    <string name="contact_header">Contact Information</string>
-    <string name="contact_input_email">Email</string>
-    <string name="contact_input_mobile">Mobile Number</string>
+    <string name="contact_header">ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ</string>
+    <string name="contact_input_email">ഇമെയില്‍</string>
+    <string name="contact_input_mobile">മൊബൈൽ നമ്പർ</string>
     <string name="contact_input_email_error_same">Email Id provided is already verified</string>
     <string name="contact_input_mobile_error_same">Mobile number provided is already verified</string>
     <string name="contact_switch_private">Private</string>
@@ -302,8 +285,8 @@
 
     <!--Update Contact Details-->
     <string name="add_contact_header">%1$s %2$s</string>
-    <string name="add_contact_mobile_text">Mobile Number</string>
-    <string name="add_contact_email_text">Email</string>
+    <string name="add_contact_mobile_text">മൊബൈൽ നമ്പർ</string>
+    <string name="add_contact_email_text">ഇമെയില്‍</string>
     <string name="add_contact_add_text">Add</string>
     <string name="add_contact_update_text">Update</string>
     <string name="add_contact_mobile_empty">Hey! Enter your mobile number.</string>
@@ -322,7 +305,7 @@
     <string name="about_header">About</string>
     <string name="about_basic_name">Name</string>
     <string name="about_contact_other_no_data">%1$s hasn\'t added their information yet.</string>
-    <string name="about_contact_self_header">No contact information to show</string>
+    <string name="about_contact_self_header">കാണിക്കാൻ കോൺടാക്റ്റ് വിവരങ്ങളൊന്നുമില്ല</string>
     <string name="about_contact_self_sub_header">Add your details so that your family can stay in touch with you</string>
     <string name="about_additional_self_header">You haven\'t added any information yet.</string>
     <string name="about_additional_other_header">No additional information about %1$s to show</string>
@@ -365,63 +348,63 @@
     <string name="members_all_header">All Members</string>
     <string name="members_inactive_header">Inactive</string>
     <string name="members_details_header">User Details</string>
-    <string name="members_details_username">Username</string>
-    <string name="members_details_password">Password</string>
-    <string name="members_details_copy_button">Copy</string>
+    <string name="members_details_username">യൂസർനെയിം</string>
+    <string name="members_details_password">പാസ് വേഡ്</string>
+    <string name="members_details_copy_button">കോപ്പി</string>
 
     <!--Notification Fragment-->
     <string name="notification_empty">No Notifications</string>
 
     <!--Family Tree Fragment-->
-    <string name="ft_breadcrumb">My family tree</string>
-    <string name="ft_add_member_button">Add Member</string>
-    <string name="ft_legend_button">Legend</string>
-    <string name="ft_locate_me_button">Locate Me</string>
-    <string name="add_member_relations_type">Type of relationship <font color='#ff3c00'>*</font></string>
-    <string name="add_member_paternal">Paternal</string>
-    <string name="add_member_maternal">Maternal</string>
-    <string name="add_member_in_law">In-Laws</string>
+    <string name="ft_breadcrumb">എന്റെ ഫാമിലി ട്രീ</string>
+    <string name="ft_add_member_button">അംഗത്തെ ചേർക്കുക</string>
+    <string name="ft_legend_button">ഐതിഹ്യം</string>
+    <string name="ft_locate_me_button">എന്നെ കണ്ടെത്തുക</string>
+    <string name="add_member_relations_type">ബന്ധം തരം <font color='#ff3c00'>*</font></string>
+    <string name="add_member_paternal">പിതൃ</string>
+    <string name="add_member_maternal">മാതൃ</string>
+    <string name="add_member_in_law">നിയമങ്ങളിൽ</string>
 
     <!--Legend View-->
     <string name="legend_verified_members">Verified Members</string>
     <string name="legend_non_verified_members">Non Verified Members</string>
     <string name="legend_primary_members">Primary Members</string>
     <string name="legend_secondary_members">Secondary Members</string>
-    <string name="legend_deceased">Deceased</string>
+    <string name="legend_deceased">മരിച്ചവർ</string>
     <string name="legend_maternal_paternal">Maternal/Paternal Tree</string>
     <string name="legend_close_button">Close</string>
 
     <!--Add/Edit Member Activity-->
-    <string name="member_first_name_input">First Name <font color='#FF0000'>*</font></string>
-    <string name="member_gender">Gender <font color='#FF0000'>*</font></string>
-    <string name="edit_member_header">Edit Member</string>
-    <string name="member_sub_header">Personal Information</string>
+    <string name="member_first_name_input">ആദ്യ നാമം <font color='#FF0000'>*</font></string>
+    <string name="member_gender">ലിംഗഭേദം  <font color='#FF0000'>*</font></string>
+    <string name="edit_member_header">അംഗത്തെ എഡിറ്റുചെയ്യുക</string>
+    <string name="member_sub_header">വ്യക്തിഗത വിവരങ്ങൾ</string>
     <string name="member_added_success_sub_header" translatable="false">Please find below their login details</string>
-    <string name="member_input_relationship">Relationship <font color='#FF0000'>*</font></string>
-    <string name="member_input_relationship_empty_error">Select your relationship with the member</string>
-    <string name="member_alive_status">Alive</string>
-    <string name="member_deceased_status">Deceased</string>
-    <string name="member_input_age">Age Group <font color='#FF0000'>*</font></string>
-    <string name="member_input_age_empty_error">Select an age group </string>
-    <string name="member_whose_wife">Whose Wife <font color='#FF0000'>*</font></string>
-    <string name="member_whose_wife_select">Select whose wife</string>
-    <string name="member_whose_husband">Whose Husband <font color='#FF0000'>*</font></string>
-    <string name="member_whose_husband_select">Select whose husband</string>
-    <string name="member_whose_daughter">Whose Daughter <font color='#FF0000'>*</font></string>
-    <string name="member_whose_daughter_select">Select whose daughter</string>
-    <string name="member_whose_son">Whose Son <font color='#FF0000'>*</font></string>
-    <string name="member_whose_son_select">Select whose son</string>
-    <string name="member_whose_aunt_son">Select which Aunts son <font color='#FF0000'>*</font></string>
-    <string name="member_aunt_son_select">Select which Aunts son</string>
-    <string name="member_whose_aunt_daughter">Select which Aunts daughter <font color='#FF0000'>*</font></string>
-    <string name="member_aunt_daughter_select">Select which Aunts daughter</string>
+    <string name="member_input_relationship">ബന്ധം <font color='#FF0000'>*</font></string>
+    <string name="member_input_relationship_empty_error">അംഗവുമായുള്ള നിങ്ങളുടെ ബന്ധം തിരഞ്ഞെടുക്കുക.</string>
+    <string name="member_alive_status">ജീവിച്ചിരിക്കുന്ന</string>
+    <string name="member_deceased_status">മരിച്ചവർ</string>
+    <string name="member_input_age">പ്രായ വിഭാഗം  <font color='#FF0000'>*</font></string>
+    <string name="member_input_age_empty_error">ഒരു പ്രായ ഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക . </string>
+    <string name="member_whose_wife">ആരുടെ ഭാര്യ <font color='#FF0000'>*</font></string>
+    <string name="member_whose_wife_select">ആരുടെ ഭാര്യയെ തിരഞ്ഞെടുക്കുക</string>
+    <string name="member_whose_husband">ആരുടെ ഭർത്താവ് <font color='#FF0000'>*</font></string>
+    <string name="member_whose_husband_select">ആരുടെ ഭർത്താവ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="member_whose_daughter">തന്റെ മകൾ <font color='#FF0000'>*</font></string>
+    <string name="member_whose_daughter_select">ആരുടെ മകളെ തിരഞ്ഞെടുക്കുക</string>
+    <string name="member_whose_son">ആരുടെ മകൻ <font color='#FF0000'>*</font></string>
+    <string name="member_whose_son_select">ആരുടെ മകനെ തിരഞ്ഞെടുക്കുക</string>
+    <string name="member_whose_aunt_son">ഏത് അമ്മായിയുടെ മകനെ തിരഞ്ഞെടുക്കുക <font color='#FF0000'>*</font></string>
+    <string name="member_aunt_son_select">ഏത് അമ്മായിയുടെ മകനെ തിരഞ്ഞെടുക്കുക</string>
+    <string name="member_whose_aunt_daughter">ഏത് അമ്മായിയുടെ മകളെ തിരഞ്ഞെടുക്കുക <font color='#FF0000'>*</font></string>
+    <string name="member_aunt_daughter_select">ഏത് അമ്മായിയുടെ മകളെ തിരഞ്ഞെടുക്കുക</string>
     <string name="member_added_success_header" translatable="false">%1$s is added to your tree as your %2$s</string>
-    <string name="relationship_add_header">Add Relationship</string>
-    <string name="relationship_add_success">Member added successfully</string>
-    <string name="member_input_first_name_empty_error">Hey! You forgot to enter the member\'s name.</string>
+    <string name="relationship_add_header">ബന്ധം ചേർക്കുക</string>
+    <string name="relationship_add_success">അംഗം വിജയകരമായി ചേർത്തു</string>
+    <string name="member_input_first_name_empty_error">ഹേയ്! അംഗത്തിന്റെ പേര് നൽകാൻ നിങ്ങൾ മറന്നു.</string>
 
     <!--paternal relations-->
-    <string name="relation_mother_error">Please add your father before adding your mother.</string>
+    <string name="relation_mother_error">ദയവായി നിങ്ങളുടെ അമ്മയെ ചേർക്കുന്നതിന് മുമ്പ് നിങ്ങളുടെ പിതാവിനെ ചേർക്കുക.</string>
     <string name="relation_brother_error">Please add your father and mother before adding your brother.</string>
     <string name="relation_sister_error">Please add your father and mother before adding your sister.</string>
     <string name="relation_son_husband_error">Please add your husband before adding your son.</string>
@@ -479,27 +462,27 @@
     <string name="relation_inlaws_greatgranddaughter">Please add your grandson and granddaughter-in-law before adding great granddaughter.</string>
 
     <!--Add Member discard dialog-->
-    <string name="discard_add_member_header">The changes you made will not be saved.</string>
-    <string name="discard_add_member_sub_header">Are you sure you want to proceed?</string>
+    <string name="discard_add_member_header">നിങ്ങൾ വരുത്തിയ മാറ്റങ്ങൾ സംരക്ഷിക്കപ്പെടില്ല .</string>
+    <string name="discard_add_member_sub_header">തുടരണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?</string>
 
     <!--Add Member relationship type-->
-    <string name="maternal_header">What is maternal?</string>
-    <string name="maternal_description">Relatives from your mother\'s side of the family</string>
-    <string name="paternal_header">What is paternal?</string>
-    <string name="paternal_description">Relatives from your father\'s side of the family</string>
-    <string name="inlaws_header">What is In-laws?</string>
-    <string name="inlaws_description">Relatives by marriage</string>
-    <string name="skip_button">Skip</string>
-    <string name="already_added">Added</string>
+    <string name="maternal_header">എന്താണ് മാതൃഭാഷ ?</string>
+    <string name="maternal_description">നിങ്ങളുടെ അമ്മയുടെ കുടുംബത്തിൽ നിന്നുള്ള ബന്ധുക്കൾ</string>
+    <string name="paternal_header">എന്താണ് പിതൃത്വം ?</string>
+    <string name="paternal_description">നിങ്ങളുടെ പിതാവിന്റെ കുടുംബത്തിൽ നിന്നുള്ള ബന്ധുക്കൾ</string>
+    <string name="inlaws_header">എന്താണ് നിയമവിരുദ്ധം ?</string>
+    <string name="inlaws_description">വിവാഹം കാരണം ബന്ധുക്കൾ</string>
+    <string name="skip_button">ഒഴിവാക്കുക</string>
+    <string name="already_added">ചേർത്തു</string>
 
     <!--View Member Activity-->
-    <string name="view_member_header">Details</string>
-    <string name="view_member_relationship">Relationship</string>
-    <string name="view_member_age_group">Age Group</string>
+    <string name="view_member_header">വിശദാംശങ്ങൾ</string>
+    <string name="view_member_relationship">ബന്ധം</string>
+    <string name="view_member_age_group">പ്രായ വിഭാഗം</string>
     <string name="view_member_living_status">Living Status</string>
     <string name="view_member_verified_text">Verified</string>
-    <string name="view_member_verified">Yes</string>
-    <string name="view_member_not_verified">No</string>
+    <string name="view_member_verified">അതെ</string>
+    <string name="view_member_not_verified">ഇല്ല</string>
     <string name="view_member_view_profile_button">View Profile</string>
     <string name="view_member_login_header">Login Details</string>
 
@@ -509,15 +492,15 @@
     <string name="foreroom_delete_post">Delete Post</string>
     <string name="foreroom_delete_post_header">Delete Post?</string>
     <string name="foreroom_delete_post_body">Are you sure you want to delete this post?</string>
-    <string name="foreroom_delete_post_cancel_button">Cancel</string>
+    <string name="foreroom_delete_post_cancel_button">റദ്ദാക്കുക</string>
     <string name="foreroom_likes_header">Likes</string>
     <string name="foreroom_tagged_header">Tag Members</string>
     <string name="foreroom_no_post_header">No post to show</string>
     <string name="foreroom_no_post_body">Add family members to your tree\nand liven up your feed</string>
     <string name="foreroom_no_post_button">Family Tree</string>
-    <string name="foreroom_hide_post_button">Hide Post</string>
+    <string name="foreroom_hide_post_button">പോസ്റ്റ് മറയ്ക്കുക</string>
     <string name="foreroom_post_hidden_button">Post Hidden</string>
-    <string name="foreroom_undo_button">Undo</string>
+    <string name="foreroom_undo_button">പഴയപടിയാക്കുക</string>
     <string name="foreroom_uploading_post_button">Uploading Post</string>
     <string name="foreroom_no_more_post">No more posts to show</string>
     <string name="foreroom_capture_photo">Take a photo</string>
@@ -542,7 +525,7 @@
 
     <!--Location Activity-->
     <string name="location_place_birth">Birth Place</string>
-    <string name="location_place_native">Native Place</string>
+    <string name="location_place_native">സ്വദേശ സ്ഥലം</string>
     <string name="location_current_city">Current City</string>
 
     <!--Add Album Activity-->
@@ -587,13 +570,13 @@
 
     <!--Negative Popup-->
     <string name="popup_header">Alert</string>
-    <string name="popup_ok_button">OK</string>
+    <string name="popup_ok_button">ശരി</string>
 
     <!--Delete Education Popup-->
     <string name="education_delete_header">Delete Education</string>
     <string name="education_delete_body">Are you sure you want to delete this education?</string>
     <string name="education_delete_button">Delete</string>
-    <string name="education_delete_cancel_button">Cancel</string>
+    <string name="education_delete_cancel_button">റദ്ദാക്കുക</string>
 
     <!--App Update Popup-->
     <string name="app_update_header">Update Kintree</string>
@@ -605,17 +588,17 @@
     <string name="edit_post_image_delete_body">Are you sure you want to delete this image?</string>
 
     <!--Share Member Details-->
-    <string name="share_header">Share With</string>
-    <string name="share_button">Share</string>
+    <string name="share_header">പങ്കിടുക</string>
+    <string name="share_button">ഷെയർ</string>
 
     <string name="kintree_icon">Kintree Icon</string>
 
     <string name="no_members_found">No member found</string>
     <string name="relation">Relationship</string>
-    <string name="search_relation">Search Relation</string>
-    <string name="member_add_success">Member added successfully</string>
+    <string name="search_relation">തിരയൽ ബന്ധം</string>
+    <string name="member_add_success">അംഗം വിജയകരമായി ചേർത്തു</string>
     <string name="delete_member">Delete member</string>
-    <string name="my_family_tree">My family tree</string>
+    <string name="my_family_tree">എന്റെ ഫാമിലി ട്രീ</string>
     <string name="valid_email_address">Oops!… that doesn\’t look like a valid email address.</string>
     <string name="verify_email">Please verify the email before saving</string>
     <string name="verify_mobile">Please verify the mobile number before saving</string>
@@ -672,20 +655,20 @@
     <string name="add_chat">add chat</string>
     <string name="shortcut_create_post_short">Create a Post</string>
     <string name="shortcut_view_profile_short">View Profile</string>
-    <string name="shortcut_view_tree">Family Tree</string>
+    <string name="shortcut_view_tree">കുടുംബം മരം</string>
     <string name="connectionReset">Connection Reset</string>
 
     <string name="uploading_post">Uploading Post</string>
 
     <string name="no_internet_post">Please check your internet connection</string>
     <string name="dialog_update_message">Bugs Fixes and Improvements</string>
-    <string name="skip">Skip</string>
+    <string name="skip">ഒഴിവാക്കുക</string>
     <string name="comments">user_comment</string>
 
     <string name="click_picture">Click pictures</string>
     <string name="selectedItem">Selected media item</string>
     <string name="illustrations_add_member">illustrations_add_member</string>
-    <string name="added">Added</string>
+    <string name="added">ചേർത്തു</string>
     <string name="post_hidden">Post Hidden</string>
     <string name="back_button">BackButton</string>
 

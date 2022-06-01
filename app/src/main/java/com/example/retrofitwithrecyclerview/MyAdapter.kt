@@ -2,32 +2,43 @@ package com.example.retrofitwithrecyclerview
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.retrofitwithrecyclerview.databinding.ItemRowBinding
 
-class MyAdapter(val context: Context, val userList: List<MyDataItem>): RecyclerView.Adapter<MyAdapter.ViewHolder>() {
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val userId : TextView
-        val title: TextView
+class MyAdapter(
+    private val userList: ArrayList<MyDataItem>
+) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
-        init {
-            userId = itemView.findViewById(R.id.idText)
-            title = itemView.findViewById(R.id.titleText)
-        }
-
-    }
+    class ViewHolder(val viewDataBinding: ItemRowBinding) :
+        RecyclerView.ViewHolder(viewDataBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var itemView = LayoutInflater.from(context).inflate(R.layout.item_row,parent, false)
-        return ViewHolder(itemView)
+
+        return ViewHolder(
+            ItemRowBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
+
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.title.text = userList[position].title
-        holder.userId.text = userList[position].userId.toString()
+//        holder.b.text = userList[position].title
+//        holder.userId.text = userList[position].userId.toString()
+
+        //let,apply, also, run
+        with(userList[position]) {
+            holder.viewDataBinding.idText.text = this.userId.toString()
+            holder.viewDataBinding.titleText.text = this.title
+        }
+
+
+
     }
 
     override fun getItemCount(): Int {
